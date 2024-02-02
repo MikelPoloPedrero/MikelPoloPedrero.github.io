@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position DIV</title>
+    <style>
+        .amarillo{
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            position: fixed;
+            top: 100px;
+            left: 100px;
+            opacity: 50%;
+        }
+        .bolita{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+        .azul{
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            bottom: 0px;
+            right: 0px;
+            padding: 20px green;
+        }
+    </style>
+</head>
+<body>
+    <p>Tipos de posicionamiento
+        Un elemento posicionado es un elemento cuyo valor calculado position es relative, absolute, fixedo sticky. (En otras palabras, es cualquier cosa excepto static).
+        Un elemento en posición relativa es un elemento cuyo valor calculado position es relative. Las propiedades topy bottomespecifican el desplazamiento vertical desde su posición normal; las propiedades lefty rightespecifican el desplazamiento horizontal.
+        Un elemento en posición absoluta es un elemento cuyo valor calculado position es absoluteo fixed. Las propiedades top, right, bottomy leftespecifican desplazamientos desde los bordes del bloque contenedor del elemento . (El bloque contenedor es el ancestro con respecto al cual se posiciona el elemento). Si el elemento tiene márgenes, se agregan al desplazamiento. El elemento establece un nuevo contexto de formato de bloque (BFC) para su contenido.
+        Un elemento colocado de forma fija es un elemento cuyo valor calculado es . Se trata como relativamente posicionado hasta que su bloque contenedor cruza un umbral específico (como establecer un valor distinto de automático) dentro de su raíz de flujo (o el contenedor dentro del cual se desplaza), momento en el cual se trata como "atascado" hasta que se encuentra con lo opuesto. borde de su bloque contenedor .positionstickytop</p>
+    <div class="amarillo"></div>
+    <div class="azul">
+        <div class="bolita"></div>
+    </div>
+</body>
+</html>
